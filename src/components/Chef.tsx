@@ -4,7 +4,8 @@ export default function Chef() {
       <div className="container">
         <div className="chef-grid" style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: "8rem", alignItems: "center" }}>
           <div style={{ position: "relative" }}>
-            <div className="chef-img-wrap" style={{ background: "url('/assets/chef.jpeg') center/top/cover no-repeat" }}>
+            <div className="chef-img-wrap" style={{ overflow: "hidden" }}>
+              <img src="/assets/chef.jpeg" alt="Chef Arjun Mehta" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             </div>
             <div className="chef-ring" />
             <div className="chef-award">

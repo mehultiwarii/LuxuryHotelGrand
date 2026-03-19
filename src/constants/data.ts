@@ -1,8 +1,8 @@
 export const menuData = {
   Starters: [
-    { name: "Seared Hokkaido Scallop", desc: "Cauliflower velouté, oscietra caviar, micro herbs", price: "₹4,800", tag: "Chef's Selection" },
-    { name: "Foie Gras Torchon", desc: "Brioche toast, fig compote, aged balsamic", price: "₹5,200", tag: "Seasonal" },
-    { name: "Corn-Fed Chicken Roulade", desc: "Black truffle mousseline, crispy chicken skin, supreme sauce", price: "₹4,800", tag: "Signature" },
+    { name: "Seared Hokkaido Scallop", desc: "Cauliflower velouté, oscietra caviar, micro herbs", price: "₹4,800", tag: "Chef's Selection", img: "/assets/SearedHokkaidoScallop.jpeg" },
+    { name: "Foie Gras Torchon", desc: "Brioche toast, fig compote, aged balsamic", price: "₹5,200", tag: "Seasonal", img: "/assets/Foie Gras Torchon.jpeg" },
+    { name: "Corn-Fed Chicken Roulade", desc: "Black truffle mousseline, crispy chicken skin, supreme sauce", price: "₹4,800", tag: "Signature", img: "/assets/Corn-Fed Chicken Roulade.jpeg" },
   ],
   "Main Course": [
     { name: "Dry-Aged Prime Rib", desc: "Truffle jus, bone marrow butter, roasted garlic", price: "₹9,800", tag: "Signature" },

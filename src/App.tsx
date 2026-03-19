@@ -7,7 +7,6 @@ import About from "./components/About";
 import Menu from "./components/Menu";
 import Experience from "./components/Experience";
 import Chef from "./components/Chef";
-import Gallery from "./components/Gallery";
 import Reservation from "./components/Reservation";
 import Footer from "./components/Footer";
 
@@ -26,7 +25,6 @@ export default function App() {
             <Menu />
             <Experience />
             <Chef />
-            <Gallery />
             <Reservation />
             <Footer />
           </div>

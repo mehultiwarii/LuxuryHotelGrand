@@ -3,9 +3,15 @@ import { useRef, useEffect } from "react";
 export default function Hero() {
   const bgRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    const fn = () => { if (bgRef.current) bgRef.current.style.transform = `translateY(${window.scrollY * 0.3}px) scale(1.05)`; };
+    let raf: number;
+    const fn = () => {
+      raf = requestAnimationFrame(() => {
+        if (bgRef.current)
+          bgRef.current.style.transform = `translateY(${window.scrollY * 0.3}px) scale(1.05)`;
+      });
+    };
     window.addEventListener("scroll", fn, { passive: true });
-    return () => window.removeEventListener("scroll", fn);
+    return () => { window.removeEventListener("scroll", fn); cancelAnimationFrame(raf); };
   }, []);
   return (
     <section className="hero-section" id="hero">

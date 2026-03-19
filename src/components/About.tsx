@@ -4,11 +4,9 @@ export default function About() {
       <div className="container">
         <div className="about-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8rem", alignItems: "center" }}>
           <div style={{ position: "relative" }}>
-            <div className="about-img-wrap">
-              <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 60% 40%,rgba(85,107,47,.5) 0%,transparent 60%),radial-gradient(ellipse at 20% 80%,rgba(201,168,76,.18) 0%,transparent 50%)" }} />
+            <div className="about-img-wrap" style={{ overflow: "hidden" }}>
+              <img src="/assets/about.jpeg" alt="About AURUM" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }} />
               <div className="about-frame" />
-              <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 1, height: 180, background: "rgba(201,168,76,.1)" }} />
-              <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 64, height: 64, borderRadius: "50%", border: "1px solid rgba(201,168,76,.18)" }} />
             </div>
             <div className="about-year">2018<span>Founded</span></div>
           </div>

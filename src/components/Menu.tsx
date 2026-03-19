@@ -20,7 +20,17 @@ export default function Menu() {
           {menuData[active].map((dish, i) => (
             <div key={dish.name} className="menu-card">
               <div className="menu-card-img">
-                <div className="menu-card-bg" style={{ background: BG[i % BG.length] }} />
+                {(dish as any).img ? (
+                  <img
+                    src={(dish as any).img}
+                    alt={dish.name}
+                    loading="lazy"
+                    decoding="async"
+                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block", position: "absolute", inset: 0 }}
+                  />
+                ) : (
+                  <div className="menu-card-bg" style={{ background: BG[i % BG.length] }} />
+                )}
                 <div className="menu-overlay" />
                 <div className="menu-plate" /><div className="menu-plate2" />
               </div>
